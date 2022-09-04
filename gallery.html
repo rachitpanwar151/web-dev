@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+           }
+           input{
+               display: none;
+           }
+           .container{
+               width: 100%;
+               text-align: center;
+           }
+           h1{
+               font-weight: normal;
+               font-size: 35px;
+               position: relative;
+               margin: 40px 0;
+
+           }
+           h1::before{
+               content: '';
+               position: absolute;
+               width: 100px;
+               height: 3px;
+               background-color: crimson;
+               bottom: -100px;
+               left: 50%;
+               transform: translateX(-50%);
+               animation: animate 4s linear infinite;
+           }
+           @keyframes animate{
+               0%{
+                   width: 100px;
+            }
+    
+          50%{width: 200px;
+            }
+           
+          100%{width: 100px;
+            }
+        }
+        .top-content{
+            background-color: grey;
+            width: 90%;
+            margin: 0 auto 20px auto;
+            height: 60px;
+            display: flex;
+            align-items: center;
+border-radius: 5px;
+box-shadow: 3px 3px 5px lightgray;
+        }
+        h3{
+            height: 100%;
+            background-color: lightgray;
+            line-height: 60px;
+            padding: 0 50px;
+            color: white;
+
+        }
+           label{
+               display: inline-block;
+               height: 100px;
+               padding: 0 10px;
+               margin: 0 50px;
+           }
+</style>
+</head>
+<body>
+
+   <div class="container">
+       <h1>our photo gallery</h1>
+       <div class="top-content">
+           <h3>photo gallery</h3>
+           <label for="check1">all photo</label>
+           
+           <label for="check2">regional cultures photo</label>
+
+           <label for="check3">regional festival photo</label>
+
+           
+           <label for="check4">regional food photo</label>
+
+       </div>
+   
+       <div class="photo-gallery">
+           <div class="pic_place">
+               <img src="p/almo.webp" alt="" srcset="">
+           </div>
+           <div class="pic_culture">
+            <img src="p/hari.webp" alt="" srcset="">
+        </div>
+        <div class="pic_place">
+            <img src="p/rish.avif" alt="" srcset="">
+        </div>
+      <!--  <div class="pic_place">
+            <img src="p/nani.webp" alt="" srcset="">
+        </div>
+             <div class="pic_festival">
+            <img src="p/aa.jpg" alt="" srcset="">
+        </div>
+        <div class="pic_place">
+         <img src="p/b.jpg" alt="" srcset="">
+        </div>
+     <div class="pic_place">
+         <img src="p/bg.jpg" alt="" srcset="">
+     </div>-->
+     <div class="pic_place">
+         <img src="p/dddd.jpg" alt="" srcset="">
+     </div>
+     <div class="pic_place">
+         <img src="p/fes.jpg" alt="" srcset="">
+     </div>
+
+
+     <div class="pic_food">
+        <img src="p/fes.jpg" alt="" srcset="">
+    </div>
+    <div class="pic_place">
+     <img src="p/gar.jpg" alt="" srcset="">
+ </div>
+ <div class="pic_place">
+     <img src="p/ggg.jpg" alt="" srcset="">
+ </div>
+ <div class="pic_place">
+     <img src="p/har.jpg" alt="" srcset="">
+ </div>
+ <div class="pic_place">
+     <img src="p/hol.jpg" alt="" srcset="">
+ </div>
+       </div>
+
+
+       <div class="footer">
+    
+        <h3>website copy&copy;right 2022</h3>
+    </div>
+</body>
+</html>
